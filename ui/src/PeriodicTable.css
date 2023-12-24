@@ -1,0 +1,32 @@
+.group-header {
+    border: 1px solid black;
+}
+
+.element-main-container {
+    border: 1px solid black;
+    width: 84px;
+    height: 84px;
+}
+
+.element-inside-container {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+.atomic-number {
+    font-size: 12px;
+}
+
+.symbol {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.element-name {
+    font-size: 12px;
+}
+  
+.atomic-weight {
+    font-size: 12px;
+}

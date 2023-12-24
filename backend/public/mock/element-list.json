@@ -1,0 +1,11 @@
+{
+    "elements": [
+        {
+            "symbol": "H",
+            "name": "Hidrogen",
+            "atomicNumber": "1",
+            "atomicWeight": "1",
+            "electronicConfiguration": "1s^1"
+        }
+    ]
+}

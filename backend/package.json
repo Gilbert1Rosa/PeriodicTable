@@ -1,0 +1,21 @@
+{
+  "name": "periodic-table",
+  "version": "1.0.0",
+  "description": "Periodic table backend service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gilbert Rosa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bson-ext": "^2.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "kerberos": "^1.1.4",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8"
+  }
+}
