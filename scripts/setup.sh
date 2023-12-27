@@ -9,6 +9,7 @@ DOMAIN=periodic-table
 # mkdir /var/www/html
 
 cd ../ui
+npm install -g create-react-app
 npm run build
 mv build/* /var/www/html/
 rm build
