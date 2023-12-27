@@ -11,6 +11,7 @@ DOMAIN=periodic-table
 cd ../ui
 npm install
 npm run build
+rm -fR /var/www/html/*
 mv build/* /var/www/html/
 rm -fR build
 cd ../scripts
