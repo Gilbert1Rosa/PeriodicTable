@@ -14,9 +14,6 @@ if (mockEnabled) {
     app.use(express.static('public'));
 }
 app.use(bodyParser.json());
-app.use(cors({
-    origin: 'http://localhost:3000'
-}));
 elementsController.getController(app);
 
 app.listen(port, () => {});

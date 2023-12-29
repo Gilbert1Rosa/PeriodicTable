@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     if (elements === null) {
-      fetch('http://localhost:4444/elements')
+      fetch('/elements')
       .then(res => res.json())
       .then(res => {
         setElements(res.elements);

@@ -2,12 +2,11 @@
 
 DOMAIN=periodic-table
 
-# Copy conf
-# cp nginx.conf /etc/nginx/sites-enabled/$DOMAIN
+# Deploy backend
 
-# Create NGINX domain
-# mkdir /var/www/html
+screen -d -m "cd ../backend && npm start"
 
+# Deploy UI
 cd ../ui
 npm install
 npm run build
