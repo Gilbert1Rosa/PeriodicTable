@@ -4,7 +4,10 @@ DOMAIN=periodic-table
 
 # Deploy backend
 
-screen -d -m "cd ../backend && npm start"
+cd ../backend
+npm install
+screen -d -m "npm start"
+cd ../scripts
 
 # Deploy UI
 cd ../ui
