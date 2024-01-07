@@ -1,4 +1,4 @@
-import Element from './Element';
+import Element from '../Element';
 
 function PeriodicElement(props: { element: Element }) {
     const { element } = props;

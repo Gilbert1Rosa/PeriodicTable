@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import Element from './Element';
-import { getBlockFMatrix, getElementMatrix, getGroups } from './MatrixHelper';
+import Element from '../Element';
+import { getBlockFMatrix, getElementMatrix, getGroups } from '../MatrixHelper';
 import PeriodicElement from './PeriodicElement';
 import './PeriodicTable.css';
 
@@ -20,7 +20,7 @@ function PeriodicTable(props: { elements: Element[] }) {
     };
 
     return (
-        <table>
+        <table className="p-table">
             <thead>
                 <tr>
                     <td></td>

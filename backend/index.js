@@ -16,4 +16,6 @@ if (mockEnabled) {
 app.use(bodyParser.json());
 elementsController.getController(app);
 
-app.listen(port, () => {});
+app.listen(port, () => {
+    console.log(`Started server on port: ${port}`);
+});
