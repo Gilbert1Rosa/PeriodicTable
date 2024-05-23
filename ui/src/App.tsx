@@ -20,6 +20,7 @@ const DETAILS = {
 
 function App() {
   const [ elements, setElements ] = useState<Element[] | null>(null);
+  const [ selectedElement, setSelectedElement ] = useState<Element | null>(null);
 
   useEffect(() => {
     if (elements === null) {
@@ -33,8 +34,8 @@ function App() {
 
   return (
     <div className="App">
-      <PeriodicTable elements={elements ? elements : []}/>
-      <Details element={DETAILS}/>
+      <PeriodicTable onElementSelected={(element: Element) => { setSelectedElement(element ? element : DETAILS); }} elements={elements ? elements : []}/>
+      <Details element={selectedElement}/>
     </div>
   );
 }

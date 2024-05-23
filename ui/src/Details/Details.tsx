@@ -3,12 +3,13 @@ import Element from '../Element';
 import './Details.css';
 
 type DetailsProps = {
-    element: Element;
+    element: Element | null;
 };
 
 function Details(props : DetailsProps) {
     const { element } = props; 
     return (
+        element &&
         <div className="details">
             <div className="atomic-number">{element.atomicNumber}</div>
             <div className="symbol">{element.symbol}</div>
